@@ -1,0 +1,25 @@
+var gaji = 4500000;
+var transport = 10000;
+var kerja = 24;
+var infak = 50000;
+var bpjs = 250000;
+var pajak = 2.5/100;
+
+console.log("Gaji Kotor : Rp. " + gaji);
+console.log("==============================");
+console.log("Potongan Pajak 2,5% : Rp. " + (gaji * pajak));
+console.log("Potongan BPJS : Rp. " + bpjs);
+console.log("Potongan Infak : Rp. " + infak);
+console.log("==============================");
+console.log("Total Potongan : Rp. " + ((gaji * pajak) + bpjs + infak));
+console.log("==============================");
+console.log("Tunjangan Transport : Rp. " + transport);
+console.log("Total Hari Kerja : Rp. " + kerja + "hari");
+console.log("==============================");
+console.log("Total Tunjangan : Rp. " + (transport * kerja));
+console.log("==============================");
+console.log("Perhitungan Gaji :");
+console.log("(Gaji Kotor - Potongan) + Tunjangan ");
+console.log(gaji + " - " + ((gaji * pajak) + bpjs + infak) + " + " + (transport * kerja));
+console.log("==============================");
+console.log("Gaji Bersih : Rp. " + (gaji - ((gaji * pajak) + bpjs + infak) + (transport * kerja)));
